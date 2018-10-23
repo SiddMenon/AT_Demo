@@ -22,9 +22,21 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- modernizr css -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
+    <script>
+        var json = $.getJSON("response.json", function(json)) {
+	        jsonData = JSON.parse(json)
+	        text += "<table class='dbkit-table'><tr class='heading-td'><td class='coin-name'>Keyword</td><td class='attachments'>Author Names</td></tr>"
+	        for (x in myObj) {
+                text += "<tr><td class='coin-name'>" + x.topic + "<td class='attachments'>" + x.authors + "</td></tr>";
+            }
+	        text += "</table></div></div>"
+	        document.getElementById("table").innerHTML = text;
+        }
+    </script>
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -348,68 +360,8 @@
                                 </div>
                                 <div class="market-status-table mt-4">
                                     <div class="table-responsive">
-                                        <table class="dbkit-table">
-                                            <tr class="heading-td">
-                                                <td class="mv-icon">Logo</td>
-                                                <td class="coin-name">Coin Name</td>
-                                                <td class="buy">Buy</td>
-                                                <td class="sell">Sells</td>
-                                                <td class="trends">Trends</td>
-                                                <td class="attachments">Attachments</td>
-                                                <td class="stats-chart">Stats</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="mv-icon"><img src="assets/images/icon/market-value/icon1.png" alt="icon">
-                                                </td>
-                                                <td class="coin-name">Dashcoin</td>
-                                                <td class="buy">30% <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="sell">20% <img src="assets/images/icon/market-value/triangle-up.png" alt="icon"></td>
-                                                <td class="trends"><img src="assets/images/icon/market-value/trends-up-icon.png" alt="icon"></td>
-                                                <td class="attachments">$ 56746,857</td>
-                                                <td class="stats-chart">
-                                                    <canvas id="mvaluechart"></canvas>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="mv-icon">
-                                                    <div class="mv-icon"><img src="assets/images/icon/market-value/icon2.png" alt="icon"></div>
-                                                </td>
-                                                <td class="coin-name">LiteCoin</td>
-                                                <td class="buy">30% <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="sell">20% <img src="assets/images/icon/market-value/triangle-up.png" alt="icon"></td>
-                                                <td class="trends"><img src="assets/images/icon/market-value/trends-down-icon.png" alt="icon"></td>
-                                                <td class="attachments">$ 56746,857</td>
-                                                <td class="stats-chart">
-                                                    <canvas id="mvaluechart2"></canvas>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="mv-icon">
-                                                    <div class="mv-icon"><img src="assets/images/icon/market-value/icon3.png" alt="icon"></div>
-                                                </td>
-                                                <td class="coin-name">Euthorium</td>
-                                                <td class="buy">30% <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="sell">20% <img src="assets/images/icon/market-value/triangle-up.png" alt="icon"></td>
-                                                <td class="trends"><img src="assets/images/icon/market-value/trends-up-icon.png" alt="icon"></td>
-                                                <td class="attachments">$ 56746,857</td>
-                                                <td class="stats-chart">
-                                                    <canvas id="mvaluechart3"></canvas>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="mv-icon">
-                                                    <div class="mv-icon"><img src="assets/images/icon/market-value/icon4.png" alt="icon"></div>
-                                                </td>
-                                                <td class="coin-name">Bitcoindash</td>
-                                                <td class="buy">30% <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="sell">20% <img src="assets/images/icon/market-value/triangle-up.png" alt="icon"></td>
-                                                <td class="trends"><img src="assets/images/icon/market-value/trends-up-icon.png" alt="icon"></td>
-                                                <td class="attachments">$ 56746,857</td>
-                                                <td class="stats-chart">
-                                                    <canvas id="mvaluechart4"></canvas>
-                                                </td>
-                                            </tr>
-                                        </table>
+                                        <div id="table">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
