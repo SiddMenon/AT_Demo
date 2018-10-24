@@ -34,7 +34,7 @@
 // 	        document.getElementById("table").innerHTML = text;
 // 		console.log(text);
 		console.log(json);
-		text += "<table class='dbkit-table'><tr class='heading-td'><td class='coin-name'>Keyword</td><td class='attachments'>Author Names</td></tr>"
+		text = "<table class='dbkit-table'><tr class='heading-td'><td class='coin-name'>Keyword</td><td class='attachments'>Author Names</td></tr>"
 	        for (x in json.data) {
                 	text += "<tr><td class='coin-name'>" + x.topic + "<td class='attachments'>" + x.authors + "</td></tr>";
             	}
