@@ -27,7 +27,7 @@
 
 <body>
     <script>
-        var json = $.getJSON("response.json", function(json)) {
+        var json = $.getJSON("response.json", function(json) {
 	        jsonData = JSON.parse(json)
 	        text += "<table class='dbkit-table'><tr class='heading-td'><td class='coin-name'>Keyword</td><td class='attachments'>Author Names</td></tr>"
 	        for (x in myObj) {
@@ -35,7 +35,7 @@
             }
 	        text += "</table></div></div>"
 	        document.getElementById("table").innerHTML = text;
-        }
+        });
     </script>
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
