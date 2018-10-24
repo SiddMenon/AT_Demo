@@ -34,7 +34,10 @@
 // 	        document.getElementById("table").innerHTML = text;
 // 		console.log(text);
 		console.log(json);
-// 		console.log(jsonData);
+		console.log(JSON.parse(json));
+		console.log(JSON.parse(json.responseText));
+		console.log(JSON.parse(json.responseJSON));
+		
         });
 	console.log(jsonD);
 	console.log(jsonD.responseJSON);
