@@ -41,10 +41,12 @@
 			console.log(json.data[x].topic);
 			var authorArray = json.data[x].authors.split(",");
 			var newAuthors = "";
-			if(authorArray.length < 3) {
+			if(authorArray.length < 10) {
 				newAuthors = json.data[x].authors
 			} else {
-				newAuthors = authorArray[0] + ", " + authorArray[1] + ", " + authorArray[2];
+				for(i = 0; i < 10; i++) {
+					newAuthors += authorArray[i] + ", ";
+				}
 			}
                 	text += "<tr><td class='coin-name'>" + json.data[x].topic + "<td class='attachments'>" + newAuthors + "</td></tr>";
             	}
