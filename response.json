@@ -1,7 +1,5 @@
-{
-   "data":
-   [  
-   {  
+{"data": 
+   [{  
       "topic":"complex protein reaction",
       "authors":"Yunxiang Wu, Wilson C. Ho, Daniel A. Ciulla, Emily E. Robinson, Christoph Heinz, Benjamin M. Wolf, Padon Chuentragool, Shelley D. Minteer, Abaid Ullah Malik, Zhongda Pan, Hao Wang, Jinghua An, Matthew J. Harper, Phil S. Baran, Bryan D. Ellis, Shermin S. Goh, Biao Cheng, Maho Morita, Justin A. Modica, Shu-Shan Gao, Masanobu Uchiyama, Cathleen M. Crudden, Tomislav Rovis, Sarah E. Reisman, Jan-E. B\u00e4ckvall, Steven J. Malcolmson, Rei Kinjo, Yong Huang, Robert R. Knowles, Robert M. Waymouth, John F. Hartwig, Matthew S. Sigman, Hans Renata, Guosheng Liu, Yi Tang, Andrew S. Weller, G. K. Surya Prakash, Choon-Hong Tan, Regan J. Thomson, Wanbin Zhang, Junliang Zhang, Reiner Anwander, Ang Li, T. Don Tilley, Vladimir Gevorgyan, Amir H. Hoveyda, Takashi Ooi, Paul J. Lusby, David B. Collum, Larry E. Overman, Shu-Li You, Li-Biao Han, Keary M. Engle, Jin-Quan Yu, Jin-Song Yang, Christopher Uyeda, Zheng Huang, Wilfred A. van der Donk, Erik J. Alexanian, Jack R. Norton, Pinghua Liu, Cl\u00e9ment Mazet, Dennis G. Hall, Guangbin Dong, Milan Mrksich, Neil K. Garg, James J. Cregg, Zhi-Cai Shi, Qiang Liu, David Milstein, Qi-Lin Zhou, "
    },
@@ -60,6 +58,5 @@
    {  
       "topic":"expression plant cell",
       "authors":"Hiroaki Suzuki, Yoshiko Igarashi, Mateusz Wierzbicki, Yuan Li, Marco Terrigno, Vera Sazhnev, Atsumi Tsuji-Hosokawa, YiLong Dong, Gongxiang Liu, Allah Nawaz, Simon J Perry, Tatsumi Nakashima, Yong-Xun Jin, Wen-Xian Yu, Minetaro Ogawa, Silvia Moretti, "
-   }
-   ]
+   }]
 }
