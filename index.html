@@ -43,16 +43,7 @@
 	        for (x in json.data) {
 			console.log(x);
 			console.log(json.data[x].topic);
-// 			var authorArray = json.data[x].authors.split(",");
-// 			var newAuthors = "";
-// 			if(authorArray.length < 10) {
-// 				newAuthors = json.data[x].authors
-// 			} else {
-// 				for(i = 0; i < 10; i++) {
-// 					newAuthors += authorArray[i] + ", ";
-// 				}
-// 			}
-                	text += "<tr><td class='column1'>" + json.data[x].topic + "<td class='column2'>" + json.data[x].authors + "</td></tr>";
+                	text += "<tr><td class='column1'>" + json.data[x].topic + "<td class='column2' style='width: 400px'>" + json.data[x].authors + "</td></tr>";
             	}
 	        text += "</tbody></table>"
 	        document.getElementById("table").innerHTML = text;
@@ -396,9 +387,9 @@
                     </div>
                 </div>
                 <!-- market value area end -->
-                <!-- row area start -->
+                <!-- row area start
                 <div class="row">
-                    <!-- Live Crypto Price area start -->
+                    <!-- Live Crypto Price area start
                     <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body">
@@ -425,7 +416,7 @@
                         </div>
                     </div>
                     <!-- Live Crypto Price area end -->
-                    <!-- trading history area start -->
+                    <!-- trading history area start
                     <div class="col-lg-8 mt-sm-30 mt-xs-30">
                         <div class="card">
                             <div class="card-body">
