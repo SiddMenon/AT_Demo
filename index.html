@@ -27,7 +27,7 @@
 
 <body>
     <script>
-        var json = $.getJSON("https://drive.google.com/file/d/1yJfzmZo0G_G8fu6BbiXwGRut2_xJpjYu/view", function(json) {
+        var json = $.getJSON("https://capstone-dashboard.herokuapp.com/response.json", function(json) {
 	        jsonData = JSON.parse(json)
 	        text += "<table class='dbkit-table'><tr class='heading-td'><td class='coin-name'>Keyword</td><td class='attachments'>Author Names</td></tr>"
 	        for (x in jsonData) {
