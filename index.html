@@ -36,8 +36,8 @@
 		console.log(json);
 		console.log(jsonData);
         });
-	console.log(jsonD);
-	jsonData = JSON.parse(jsonD);
+	console.log(jsonD.responseJSON);
+	jsonData = JSON.parse(jsonD.responseJSON);
 	text += "<table class='dbkit-table'><tr class='heading-td'><td class='coin-name'>Keyword</td><td class='attachments'>Author Names</td></tr>"
 	for (x in myObj) {
         	text += "<tr><td class='coin-name'>" + x.topic + "<td class='attachments'>" + x.authors + "</td></tr>";
